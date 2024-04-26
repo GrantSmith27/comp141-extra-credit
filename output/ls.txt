@@ -1,0 +1,4 @@
+ls.txt
+main.sh
+output
+pwd.txt
