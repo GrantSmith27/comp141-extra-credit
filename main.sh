@@ -1,16 +1,11 @@
 #!/bin/bash
 #Extra-Credit Assignment
 
-#define output directory
+
 output="output"
 
-#check if output directory exists before making another one
-if [ -d "$output" ]; then
-	echo "Output directory exists"
-else
-	mkdir -p "$output"
-	echo "Output directory created."
-fi
+#make a directory called output
+mkdir output
 
 #ask for input and convert it to text file
 read -p "Please write something. Anything. I need input. "
@@ -30,7 +25,8 @@ mv pwd.txt ls.txt $output
 
 #read the contents of your created text file to read.txt and copy.txt
 cd $output
-cp output.txt read.txt copy.txt 
+cp output.txt read.txt
+cp output.txt copy.txt
 
 #invoke an alias of the date
 alias todaysdate=date
