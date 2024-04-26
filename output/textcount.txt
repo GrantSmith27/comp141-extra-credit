@@ -1,1 +1,1 @@
-1 output.txt
+3 output.txt
